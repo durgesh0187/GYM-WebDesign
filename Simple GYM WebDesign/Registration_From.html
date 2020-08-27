@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        h4{
+            text-align: center;
+            font-size: xx-large;
+        }
+
+        .name{
+            text-align: center;
+            font-size: x-large;
+
+        }
+
+        .lastName{
+            text-align: center;
+            font-size: x-large;
+            padding: 20px;
+        }
+
+        .email{
+            text-align: center;
+            font-size: x-large;     
+        }
+
+        .emailSpace{
+            padding-left: 10px;
+        }
+
+        .contact{
+            text-align: center;
+            font-size: x-large;
+            padding-top: 20px;
+            padding-right: 2px;
+        }
+
+        .age{
+            text-align: center;
+            font-size: x-large;
+            padding-top: 20px;
+            padding-right: 3px;
+        }
+
+        .gender{
+            text-align: center;
+            font-size: x-large;
+            padding-top: 20px;
+            padding-right: 36px;
+        }
+
+        .address{
+            text-align: center;
+            font-size: x-large;
+            padding-top: 20px;
+            padding-right: 5px;
+        }
+
+        .submit{
+            text-align: center;
+            font-size: x-large;
+            padding-top: 20px;
+            padding-left: 10px;
+        }
+
+        .submit input:hover{
+            background-color: rgb(192, 71, 91);
+        }
+
+        .submit input{
+            border: 2px solid black;
+        }
+
+    </style>
+
+</head>
+<body style="background-color: rgb(164, 115, 209);">
+
+    <h4>Registration Form</h4>
+
+    <form action="backend.php">
+        <div class="name">
+            First Name: <input type="text" name="myFirstName">
+        </div>
+
+        <div class="lastName">
+            Last Name: <input type="text" name="myLastName">
+        </div>
+
+        <div class="email">
+            Email: &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" name="myEmail"> 
+        </div>
+
+        <div class="contact">
+            Contact: &nbsp; &nbsp; &nbsp; <input type="number" name="myContact">
+        </div>
+
+        <div class="age">
+            Age: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" name="myAge">
+        </div>
+
+        <div class="gender">
+            Gender:  Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+        </div>
+
+        <div class="address">
+            Address: &nbsp; &nbsp; &nbsp; <textarea name="myTest" cols="21" rows="5" ></textarea>
+        </div>
+
+        <div class="submit">
+            Submit: <input type="submit" name="mySubmit"> Reset Now: <input type="reset" name="mySubmit">
+        </div>
+    </form>
+</body>
+</html>
